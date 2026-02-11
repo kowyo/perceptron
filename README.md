@@ -14,10 +14,10 @@ A simple perceptron implementation for logic gates (AND, OR, NAND, COMPLEMENT, X
 |:---:|:---:|
 | ![AND](results/AND.png) | ![OR](results/OR.png) |
 
-| NAND | COMPLEMENT |
+| NAND | XOR |
 |:---:|:---:|
-| ![NAND](results/NAND.png) | ![COMPLEMENT](results/COMPLEMENT.png) |
+| ![NAND](results/NAND.png) | ![XOR](results/XOR.png) |
 
-| XOR |
+| COMPLEMENT |
 |:---:|
-| ![XOR](results/XOR.png) |
+| ![COMPLEMENT](results/COMPLEMENT.png) |
