@@ -70,7 +70,7 @@ wheels = [
 ]
 
 [[package]]
-name = "hw1"
+name = "perceptron"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
