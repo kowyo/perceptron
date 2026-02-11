@@ -1,3 +1,4 @@
+import os
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -7,7 +8,8 @@ Y = np.array([0.6, 1.1, 3.9, 5.1, 6.2, 7.9])
 X_b = np.vstack((X, np.ones(len(X)))).T
 w_lls, b_lls = np.linalg.inv(X_b.T @ X_b) @ X_b.T @ Y
 
-print(f"LLS Solution: w = {w_lls:.4f}, b = {b_lls:.4f}")
+lls_result = f"LLS Solution: w = {w_lls:.4f}, b = {b_lls:.4f}"
+print(lls_result)
 
 def train_lms(x_data, y_data, lr, epochs):
     w = np.random.randn()
@@ -36,7 +38,8 @@ lr = 0.01
 epochs = 100
 w_lms, b_lms, w_hist, b_hist = train_lms(X, Y, lr, epochs)
 
-print(f"LMS Solution (lr={lr}): w = {w_lms:.4f}, b = {b_lms:.4f}")
+lms_result = f"LMS Solution (lr={lr}): w = {w_lms:.4f}, b = {b_lms:.4f}"
+print(lms_result)
 
 plt.figure(figsize=(15, 5))
 
@@ -75,4 +78,12 @@ plt.legend()
 plt.grid(True)
 
 plt.tight_layout()
+
+os.makedirs("results", exist_ok=True)
+plt.savefig("results/linear_regression.png")
+
+with open("results/linear_regression_results.txt", "w") as f:
+    f.write(lls_result + "\n")
+    f.write(lms_result + "\n")
+
 plt.show()

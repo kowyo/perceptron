@@ -1,0 +1,2 @@
+LLS Solution: w = 1.4404, b = 0.5562
+LMS Solution (lr=0.01): w = 1.4592, b = 0.4662
