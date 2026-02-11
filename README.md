@@ -10,4 +10,14 @@ Linear Least Squares (LLS) and Least Mean Squares (LMS) implementation.
 
 A simple perceptron implementation for logic gates (AND, OR, NAND, COMPLEMENT, XOR).
 
-![Perceptron Learning](results/AND.png)
+| AND | OR |
+|:---:|:---:|
+| ![AND](results/AND.png) | ![OR](results/OR.png) |
+
+| NAND | COMPLEMENT |
+|:---:|:---:|
+| ![NAND](results/NAND.png) | ![COMPLEMENT](results/COMPLEMENT.png) |
+
+| XOR |
+|:---:|
+| ![XOR](results/XOR.png) |
